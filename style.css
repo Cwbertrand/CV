@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;1,400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+   
+}
+
+
+.heading{
+    background: url(./photos/background.jpg) no-repeat;
+    background-position: center ;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.image img{
+    height: 170px;
+    width: 170px; 
+    border-radius: 80px;
+}
+
+.text{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    
+    
+}
+
+p.name{
+    letter-spacing: .2em;
+    font-size: 30px;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+    animation-direction: alternate;
+
+}
+
+/*000000------------- animations ------------*/
+
+
+/*   
+  @keyframes slidein {
+    0% {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    100% {
+        position: relative;
+        right: 100%;
+      margin-left: 0%;
+      width: 300%;
+    }
+  } */
+
+
+
+.text .post{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+/*-------------- HEADING ENDS -----------------------------*/
+
+
+
+/* -----------------General classes ---------------------*/
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.me{
+    margin-bottom: 2em;
+    font-size: 12px;
+}
+
+hr{
+    height: 5px !important;
+    width: 3rem;
+    background-color: #7e7777;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.prof{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+ul{
+    padding: 0;
+}
+
+/* -------General classes ends--------------------- */
+
+
+
+/* -------------Grid one-------------------------- */
+
+.grid-one{
+    padding: 30px 10px 0 80px;
+    width: 90%;
+}
+
+
+
+/* -------------profil personel-------------------------- */
+.description-one{
+    font-size: 15px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+
+.contact li{
+    list-style: none;
+    padding: 3px 0;
+}
+
+
+/* -------------contact-------------------------- */
+ul.description-two{
+    padding: 0;  
+}
+
+ul li .cont-sect{
+    padding-left: .8rem;
+}
+
+/* -------------education et formation-------------------------- */
+
+
+.work{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.date{
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+}
+
+/* -------------Grid two-------------------------- */
+
+.grid-two{
+    padding: 30px 7em 9em 5em;
+    background-color: #dad8d8b7;
+    width: 100%;
+}
+
+/* -------------competence-------------------------- */
+
+.list{
+    padding: .3em 0;
+}
+
+.description-four .list{
+    position: relative;
+    bottom: 1.7em;
+}
+
+
+.qrcode img{
+    width: 0px; 
+}
+.qrcode img {
+    width: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 2em;
+    top: .1em;
+}
+
+.space{
+    padding: 1em 0;
+}
+
+
+
+/* footer */
+
+.copyright{
+    padding: 20px;
+    background: #022063;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+}
+
+.copyright a{
+    color: rgb(0, 221, 192);
+}
+
+
+footer .scroll-up{
+    position: absolute;
+    right: 0;
+   
+    
+}
+
+.fa-arrow-alt-circle-up{
+    margin: 10px 40px 0 0px ;
+    color: gray;
+    font-size: 40px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 359px) and (min-width: 50px) {
+    hr{
+        height: 5px !important;
+        width: 3rem;
+        background-color: #7e7777;
+        border: none;
+        margin-bottom: .9em;
+    }
+    
+    
+    .heading{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img{
+        height: 170px;
+        width: 180px; 
+        border-radius: 100px;
+        margin: 13px 0px 0 0;
+    }
+
+   
+    p.post{
+        font-size: 13px !important;
+        letter-spacing: 0;
+        margin: 0 20px 20px 0;
+        position: relative;
+        bottom: 20px;
+        left: 1em;
+    }
+
+    p.name{
+        font-size: 20px !important;
+        letter-spacing: 0;
+        margin: 0 60px 20px 0;
+        position: relative;
+        left: 1.7em;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+.grid-one {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.description-one {
+    padding-top: .9em;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 20px;
+     
+}
+
+.description-two{
+    padding-top: .9em;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 5em;
+}
+
+.date {
+    font-size: 12px;
+    position: relative;
+    bottom: .3em;
+    padding-bottom: 1em;
+    padding-right: 40px;
+}
+
+
+
+.grid-two {
+    
+    background-color: #dad8d8b7;
+    padding-left: 40px;
+    padding: 0px;
+}
+
+.description-four .list {
+    position: relative;
+    bottom: 1.7em;
+    margin-top: .9em;
+    width: 100%;
+}
+
+div.skills,
+div.work-experience{
+    padding: 30px;
+}
+.list{
+    text-align: justify;
+    padding-right: 10px;
+}
+div.work-experience{
+    position: relative;
+    bottom: 5em;
+}
+.work{
+    padding-right: 40px;
+}
+
+.qrcode img {
+    width: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6em;
+    top: .3em;
+}
+
+div.space{
+    padding:0%;
+}
+
+}
+
+
+
+/* Small devices (landscape phones, 360px and up) */
+@media only screen and (max-width: 576px) and (min-width: 360px) {
+    hr{
+        height: 5px !important;
+        width: 3rem;
+        background-color: #7e7777;
+        border: none;
+        margin-bottom: .9em;
+    }
+    
+    
+    .heading{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img{
+        height: 170px;
+        width: 180px; 
+        border-radius: 100px;
+        margin: 13px 0px 0 0;
+    }
+
+   
+    p.post{
+        font-size: 13px !important;
+        letter-spacing: 0;
+        margin: 0 20px 20px 0;
+        position: relative;
+        bottom: 20px;
+        left: 1em;
+    }
+
+    p.name{
+        font-size: 20px !important;
+        letter-spacing: 0;
+        margin: 0 60px 20px 0;
+        position: relative;
+        left: 1.7em;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+.grid-one {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.description-one {
+    padding-top: .9em;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 20px;
+     
+}
+
+.description-two{
+    padding-top: .9em;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 5em;
+}
+
+.date {
+    font-size: 12px;
+    position: relative;
+    bottom: .3em;
+    padding-bottom: 1em;
+    padding-right: 40px;
+}
+
+
+
+.grid-two {
+    
+    background-color: #dad8d8b7;
+    padding-left: 40px;
+    padding: 0px;
+}
+
+.description-four .list {
+    position: relative;
+    bottom: 1.7em;
+    margin-top: .9em;
+    width: 100%;
+}
+
+div.skills,
+div.work-experience{
+    padding: 30px;
+    position: relative;
+    bottom: 2em;
+}
+.list{
+    padding-right: 10px;
+}
+
+div.work-experience{
+    position: relative;
+    bottom: 5em;
+}
+
+.work{
+    padding-right: 40px;
+}
+
+.qrcode img {
+    width: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6em;
+    top: .3em;
+}
+
+div.space{
+    padding:0%;
+}
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  
+    .heading{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image{
+        position: relative;
+        right: 4em;
+    }
+
+
+    .image img{
+        height: 140px;
+        width: 140px; 
+        border-radius: 100px;
+        margin: 13px 0px 0 0;
+    }
+
+   .text{
+       position: relative;
+       left: 4em;
+   }
+
+    p.post{
+        font-size: 13px !important;
+        letter-spacing: 0;
+        position: relative;
+        bottom: 20px;
+    }
+
+    p.name{
+        font-size: 20px !important;
+        letter-spacing: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .grid-one {
+        padding-left: 30px;
+        width: 100%;
+    }
+    
+    .description-one {
+        padding-top: .9em;
+        font-size: 15px;
+        text-align: justify;
+        padding-right: 20px;
+         
+    }
+    
+    .description-two{
+        padding-top: .9em;
+        font-size: 15px;
+        text-align: justify;
+        padding-right: 50px;
+        padding-left: 5em;
+    }
+    
+    .date {
+        text-align: left;
+        font-size: 12px;
+        position: relative;
+        bottom: .3em;
+        padding-bottom: 1em !important;
+        padding-right: 40px;
+    }
+
+    /* -------------------grid two----------- */
+
+    .grid-two {
+    
+        background-color: #dad8d8b7;
+        padding-left: 40px;
+        padding: 0px;
+    }
+    
+    .description-four .list {
+        position: relative;
+        bottom: 1.7em;
+        margin-top: .9em;
+        width: 100%;
+    }
+    
+    div.skills,
+    div.work-experience{
+        padding: 30px;
+        position: relative;
+        bottom: 2em;
+    }
+    .list{
+        text-align: left;
+        font-size: 12px;
+        padding-right: 10px;
+        
+    }
+
+    .cont-sect{
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .prof{
+        text-align: left;
+        font-size: 21px;
+        
+    }
+    div.work-experience{
+        position: relative;
+        bottom: 5em;
+    }
+    .work{
+        padding-right: 40px;
+    }
+    
+    .qrcode img {
+        width: 150px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 6em;
+        top: .1em;
+    }
+    
+    
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px){
+
+    .grid-one {
+        padding-left: 40px;
+       
+    }
+
+    .grid-two {
+        padding: 0px 2em 9em 3em;
+        background-color: rgba(218, 216, 216, 0.718);
+    }
+
+    .qrcode img {
+        width: 150px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 2em;
+        top: .1em;
+    }
+}
